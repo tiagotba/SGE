@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="DaoFactory.cs" />
     <Compile Include="Entity\Bd_Sge_Fluent.cs" />
+    <Compile Include="Entity\ClienteMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
