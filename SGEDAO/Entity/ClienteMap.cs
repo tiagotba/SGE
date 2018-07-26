@@ -12,7 +12,19 @@ namespace SGEDAO.Entity
     {
         public ClienteMap()
         {
+            this.HasKey(c => c.Id_Cliente);
 
+            this.Property(c => c.Nome_Cliente).HasMaxLength(500);
+
+            this.Property(c => c.Matr_Func_Cliente).HasColumnName("MAT_FUNC_CLIENTE");
+
+            this.Property(c => c.Rg_Cliente).HasMaxLength(13);
+
+            this.Property(c => c.Cpf_Cliente).HasMaxLength(18);
+
+            this.Property(c => c.E_Func_Cliente);
+
+            this.ToTable("CLI_CLIENTE", "bd_sge_sql");
         }
     }
 }

@@ -52,10 +52,15 @@
     <Compile Include="DaoFactory.cs" />
     <Compile Include="Entity\Bd_Sge_Fluent.cs" />
     <Compile Include="Entity\ClienteMap.cs" />
+    <Compile Include="Entity\OcupacaoMap.cs" />
+    <Compile Include="Entity\SetorMap.cs" />
+    <Compile Include="Entity\VagasMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

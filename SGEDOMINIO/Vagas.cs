@@ -8,14 +8,18 @@ namespace SGEDOMINIO
 {
    public class Vagas
     {
+        public Vagas()
+        {
+            Ocupacoes = new List<Ocupacao>();
+        }
         public int Id_Vaga { get; set; }
 
         public string Numero_Vaga { get; set; }
 
-        public int Setor { get; set; }
+        public virtual Setor setor { get; set; }
 
-        public IList<Ocupacao> Ocupacoes { get; set; }
+        public virtual IList<Ocupacao> Ocupacoes { get; set; }
 
-        public IList<Desocupacao> Desocupacoes { get; set; }
+        public virtual IList<Desocupacao> Desocupacoes { get; set; }
     }
 }

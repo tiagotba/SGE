@@ -8,14 +8,14 @@ namespace SGEDOMINIO
 {
   public  class Ocupacao
     {
-        public int Id_Ocupacao { get; set; }
+        public int Id_Ocup { get; set; }
 
         public DateTime Data_Hora_Entrada { get; set; }
 
-        public int Setor { get; set; }
+        public virtual Setor setor { get; set; }
 
-        public int Vaga { get; set; }
+        public virtual Vagas vaga { get; set; }
 
-        public int Veiculo { get; set; }
+        public virtual Veiculo veiculo { get; set; }
     }
 }
