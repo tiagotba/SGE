@@ -3,36 +3,54 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using SGEDAO;
+using SGEDAO.DAO;
 using SGEDOMINIO;
-using SGEREPOSITORIO.Interfaces;
+using SGEDAO.Entity;
 
 namespace SGEREPOSITORIO.Repositorios
 {
-    public class VagasRespository : IVagasRespository
+    public class VagasRespository
     {
-        public void Editar(Vagas vag)
+        private VagasDao dao;
+        private Bd_Sge_Fluent _sgeContext = new Bd_Sge_Fluent();
+        public VagasRespository()
         {
-            throw new NotImplementedException();
-        }
-
-        public bool Excluir(int idVag)
-        {
-            throw new NotImplementedException();
+            dao = new VagasDao(_sgeContext);
         }
 
         public IEnumerable<Vagas> ListarTodos()
         {
-            throw new NotImplementedException();
+            return dao.ListarTodos();
         }
 
-        public Vagas Pesquisar(int idVag)
+        public void Editar(Vagas vag)
         {
-            throw new NotImplementedException();
+            if (vag == null || vag.Id_Vaga == 0)
+            {
+                throw new Exception("O identificador da vaga não foi informado");
+            }
+            else
+            {
+                dao.Editar(vag);
+            }
         }
 
-        public bool Salvar(Vagas vag)
+        public void Salvar(Vagas vag)
         {
-            throw new NotImplementedException();
+            dao.Salvar(vag);
+        }
+
+        public bool Excluir(int idVag)
+        {
+            if (dao.Excluir(idVag))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }

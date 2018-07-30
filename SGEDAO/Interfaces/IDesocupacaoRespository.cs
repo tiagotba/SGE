@@ -5,11 +5,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SGEREPOSITORIO.Interfaces
+namespace SGEDAO.Interfaces
 {
-   public interface IOcupacaoRepository
+  public  interface IDesocupacaoRespository
     {
-        bool Salvar(Ocupacao ocu);
-        bool Excluir(int idOcu);
+        bool Salvar(Desocupacao desc);
+        bool Excluir(int idDesc);
     }
 }

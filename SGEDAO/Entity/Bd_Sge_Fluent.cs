@@ -28,7 +28,8 @@ namespace SGEDAO.Entity
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-
+            Configuration.LazyLoadingEnabled = false;
+            Configuration.ProxyCreationEnabled = true;
         }
 
     }

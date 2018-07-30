@@ -5,11 +5,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SGEREPOSITORIO.Interfaces
+namespace SGEDAO.Interfaces
 {
    public interface IVagasRespository
     {
-        bool Salvar(Vagas vag);
+        void Salvar(Vagas vag);
         IEnumerable<Vagas> ListarTodos();
         void Editar(Vagas vag);
         bool Excluir(int idVag);

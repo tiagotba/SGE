@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SGEREPOSITORIO.Interfaces
+namespace SGEDAO.Interfaces
 {
    public interface ITipoOcorrencia
     {
