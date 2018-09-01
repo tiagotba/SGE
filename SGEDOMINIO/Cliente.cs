@@ -6,8 +6,12 @@ using System.Threading.Tasks;
 
 namespace SGEDOMINIO
 {
-   public class Cliente
+    public class Cliente
     {
+        public Cliente()
+        {
+            Ocorrencias = new List<Ocorrencia>();
+        }
         public int Id_Cliente { get; set; }
 
         public string Nome_Cliente { get; set; }
@@ -18,6 +22,9 @@ namespace SGEDOMINIO
 
         public bool E_Func_Cliente { get; set; }
 
-        public string Matr_Func_Cliente { get; set; }
+        public IList<Ocorrencia> Ocorrencias { get; set; }
+
+        public virtual Usuario Usuario { get; set; }
+
     }
 }

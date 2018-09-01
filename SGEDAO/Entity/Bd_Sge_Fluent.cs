@@ -30,6 +30,14 @@ namespace SGEDAO.Entity
         {
             Configuration.LazyLoadingEnabled = false;
             Configuration.ProxyCreationEnabled = true;
+            modelBuilder.Configurations.Add(new ClienteMap());
+            modelBuilder.Configurations.Add(new OcupacaoMap());
+            modelBuilder.Configurations.Add(new SetorMap());
+            modelBuilder.Configurations.Add(new VagasMap());
+            modelBuilder.Configurations.Add(new OcorrenciaMap());
+            modelBuilder.Configurations.Add(new TipoOcorrenciaMap());
+            modelBuilder.Configurations.Add(new VeiculoMap());
+            modelBuilder.Configurations.Add(new EstadiaMap());
         }
 
     }

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SGEDAO.Interfaces
 {
-   public interface IVagasRespository
+   public interface IVagasDAO
     {
         void Salvar(Vagas vag);
         IEnumerable<Vagas> ListarTodos();

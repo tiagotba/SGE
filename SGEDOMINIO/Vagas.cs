@@ -11,10 +11,13 @@ namespace SGEDOMINIO
         public Vagas()
         {
             Ocupacoes = new List<Ocupacao>();
+            Desocupacoes = new List<Desocupacao>();
         }
         public int Id_Vaga { get; set; }
 
         public string Numero_Vaga { get; set; }
+
+        public int Id_Setor { get; set; }
 
         public virtual Setor setor { get; set; }
 

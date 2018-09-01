@@ -9,7 +9,7 @@ using SGEDAO.Entity;
 
 namespace SGEDAO.DAO
 {
-    public class VagasDao : IVagasRespository
+    public class VagasDao : IVagasDAO
     {
         private readonly Bd_Sge_Fluent _sgeContext;
 

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SGEDAO.Interfaces
 {
-  public  interface IEstadiaRepository
+  public  interface IEstadiaDAO
     {
         bool Salvar(Estadia est);
         bool Excluir(int idEst);

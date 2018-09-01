@@ -7,10 +7,9 @@ using System.Threading.Tasks;
 
 namespace SGEDAO.Interfaces
 {
-   public interface ITipoOcorrencia
+  public  interface IDesocupacaoDAO
     {
-        bool Salvar(TipoOcorrencia tip);
-        IEnumerable<TipoOcorrencia> ListarTodos();
-        TipoOcorrencia Pesquisar(int idTip);
+        bool Salvar(Desocupacao desc);
+        bool Excluir(int idDesc);
     }
 }

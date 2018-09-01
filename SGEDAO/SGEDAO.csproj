@@ -53,19 +53,25 @@
     <Compile Include="DAO\VagasDao.cs" />
     <Compile Include="Entity\Bd_Sge_Fluent.cs" />
     <Compile Include="Entity\ClienteMap.cs" />
+    <Compile Include="Entity\DesocupacaoMap.cs" />
+    <Compile Include="Entity\EstadiaMap.cs" />
+    <Compile Include="Entity\OcorrenciaMap.cs" />
     <Compile Include="Entity\OcupacaoMap.cs" />
     <Compile Include="Entity\SetorMap.cs" />
+    <Compile Include="Entity\TipoOcorrenciaMap.cs" />
+    <Compile Include="Entity\UsuarioMap.cs" />
     <Compile Include="Entity\VagasMap.cs" />
-    <Compile Include="Interfaces\IClienteRepository.cs" />
-    <Compile Include="Interfaces\IDesocupacaoRespository.cs" />
-    <Compile Include="Interfaces\IEstadiaRepository.cs" />
-    <Compile Include="Interfaces\IOcorrenciaRepository.cs" />
-    <Compile Include="Interfaces\IOcupacaoRepository.cs" />
-    <Compile Include="Interfaces\ISetorRepository.cs" />
-    <Compile Include="Interfaces\ITipoOcorrencia.cs" />
-    <Compile Include="Interfaces\IUsuarioRepository.cs" />
-    <Compile Include="Interfaces\IVagasRespository.cs" />
-    <Compile Include="Interfaces\IVeiculoRepository.cs" />
+    <Compile Include="Entity\VeiculoMap.cs" />
+    <Compile Include="Interfaces\IClienteDAO.cs" />
+    <Compile Include="Interfaces\IDesocupacaoDAO.cs" />
+    <Compile Include="Interfaces\IEstadiaDAO.cs" />
+    <Compile Include="Interfaces\IOcorrenciaDAO.cs" />
+    <Compile Include="Interfaces\IOcupacaoDAO.cs" />
+    <Compile Include="Interfaces\ISetorDAO.cs" />
+    <Compile Include="Interfaces\ITipoDAO.cs" />
+    <Compile Include="Interfaces\IUsuarioDAO.cs" />
+    <Compile Include="Interfaces\IVagasDAO.cs" />
+    <Compile Include="Interfaces\IVeiculoDAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

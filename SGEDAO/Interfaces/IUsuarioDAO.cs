@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SGEDAO.Interfaces
 {
-  public  interface IUsuarioRepository
+  public  interface IUsuarioDAO
     {
         bool Salvar(Usuario usu);
         IEnumerable<Usuario> ListarTodos();

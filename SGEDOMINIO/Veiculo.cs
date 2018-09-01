@@ -8,6 +8,11 @@ namespace SGEDOMINIO
 {
    public class Veiculo
     {
+        public Veiculo()
+        {
+            Ocupacoes = new List<Ocupacao>();
+            Desocupacoes = new List<Desocupacao>();
+        }
         public int Id_Veiculo { get; set; }
 
         public string Placa_Veic { get; set; }

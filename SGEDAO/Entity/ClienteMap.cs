@@ -16,13 +16,15 @@ namespace SGEDAO.Entity
 
             this.Property(c => c.Nome_Cliente).HasMaxLength(500);
 
-            this.Property(c => c.Matr_Func_Cliente).HasColumnName("MAT_FUNC_CLIENTE");
-
             this.Property(c => c.Rg_Cliente).HasMaxLength(13);
 
             this.Property(c => c.Cpf_Cliente).HasMaxLength(18);
 
             this.Property(c => c.E_Func_Cliente);
+
+            this.HasMany(c => c.Ocorrencias)
+                .WithRequired(c => c.Cliente)
+                .HasForeignKey(x => x.Id_Cliente);
 
             this.ToTable("CLI_CLIENTE", "bd_sge_sql");
         }

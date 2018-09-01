@@ -16,11 +16,13 @@ namespace SGEDAO.Entity
 
             this.Property(o => o.Data_Hora_Entrada).HasColumnName("DATA_ENTRADA") ;
 
-            this.HasRequired(o => o.setor).WithMany(o => o.Ocupacoes);
+            this.HasRequired(o => o.setor).WithMany(o => o.Ocupacoes).HasForeignKey(x => x.Id_Setor);
 
-            this.HasRequired(o => o.vaga).WithMany(o => o.Ocupacoes);
+            this.HasRequired(o => o.vaga).WithMany(o => o.Ocupacoes).HasForeignKey(x => x.Id_Setor); ;
 
-            this.HasRequired(o => o.veiculo).WithMany(o => o.Ocupacoes);
+            this.HasRequired(o => o.veiculo).WithMany(o => o.Ocupacoes).HasForeignKey(x => x.Id_Setor);
+
+            this.ToTable("OCU_OCUPACAO", "bd_sge_sql");
         }
     }
 }

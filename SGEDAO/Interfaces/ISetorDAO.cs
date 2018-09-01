@@ -7,9 +7,10 @@ using System.Threading.Tasks;
 
 namespace SGEDAO.Interfaces
 {
-  public  interface IDesocupacaoRespository
+  public  interface ISetorDAO
     {
-        bool Salvar(Desocupacao desc);
-        bool Excluir(int idDesc);
+        bool Salvar(Setor set);
+        IEnumerable<Setor> ListarTodos();
+        Setor Pesquisar(int idSet);
     }
 }

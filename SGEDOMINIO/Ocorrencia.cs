@@ -16,10 +16,16 @@ namespace SGEDOMINIO
 
         public string Desc_Ocorrencia { get; set; }
 
-        public int Veiculo { get; set; }
+        public int Id_Veiculo { get; set; }
 
-        public int Usuario { get; set; }
+        public virtual Veiculo Veiculo { get; set; }
 
-        public int TipoOcorrencia { get; set; }
+        public int Id_Cliente { get; set; }
+
+        public virtual Cliente Cliente { get; set; }
+
+        public int Id_Tipo_Ocorrencia { get; set; }
+
+        public virtual TipoOcorrencia TipoOcorrencia{ get; set; }
     }
 }

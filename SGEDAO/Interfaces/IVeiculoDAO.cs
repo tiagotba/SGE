@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 
 namespace SGEDAO.Interfaces
 {
-  public  interface ISetorRepository
+  public  interface IVeiculoDAO
     {
-        bool Salvar(Setor set);
-        IEnumerable<Setor> ListarTodos();
-        Setor Pesquisar(int idSet);
+        bool Salvar(Veiculo veic);
+        IEnumerable<Veiculo> ListarTodos();
+        Veiculo Pesquisar(int idVeic);
     }
 }

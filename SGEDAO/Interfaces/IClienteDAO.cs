@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SGEDAO.Interfaces
 {
-   public interface IClienteRepository
+   public interface IClienteDAO
     {
         bool Salvar(Cliente cli);
         IEnumerable<Cliente> ListarTodos();

@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace SGEDOMINIO
 {
-   public class Estadia
+    public class Estadia
     {
         public int Id_Estadia { get; set; }
 
-        public int Id_Ocupacao { get; set; }
+        public virtual Ocupacao Ocupacao { get; set; }
 
-        public int Id_Desocupacao { get; set; }
+        public virtual Desocupacao Desocupacao { get; set; }
 
         public decimal Valor_Estadia { get; set; }
 

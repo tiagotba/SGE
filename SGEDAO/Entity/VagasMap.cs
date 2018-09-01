@@ -16,6 +16,9 @@ namespace SGEDAO.Entity
             this.Property(v => v.Numero_Vaga).HasMaxLength(3);
             this.HasRequired(i => i.setor).WithMany(i => i.Vagas)
                 .HasForeignKey(i => i.setor);
+            this.HasMany(v => v.Desocupacoes)
+                .WithRequired(v => v.Vaga)
+                .HasForeignKey(x => x.Id_Vaga);
             this.ToTable("VAG_VAGA", "bd_sge_sql");
         }
     }

@@ -8,6 +8,7 @@ namespace SGEDOMINIO
 {
    public class Usuario
     {
+       
         public int Id_Usuario { get; set; }
 
         public string Matr_Func { get; set; }
@@ -18,6 +19,8 @@ namespace SGEDOMINIO
 
         public string Senha_Func { get; set; }
 
-        public IList<Ocorrencia> Ocorrencias { get; set; }
+        public virtual Cliente Cliente { get; set; }
+
+        
     }
 }

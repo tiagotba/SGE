@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SGEDAO.Interfaces
 {
-  public  interface IOcorrenciaRepository
+  public  interface IOcorrenciaDAO
     {
         bool Salvar(Ocorrencia oco);
         IEnumerable<Ocorrencia> ListarTodas();
