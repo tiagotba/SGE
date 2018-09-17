@@ -17,7 +17,7 @@ namespace SGEDOMINIO
 
         public string Numero_Vaga { get; set; }
 
-        public int Id_Setor { get; set; }
+     //  public int Id_Setor { get; set; }
 
         public virtual Setor setor { get; set; }
 

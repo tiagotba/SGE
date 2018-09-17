@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DaoFactory.cs" />
+    <Compile Include="DAO\UsuarioDao.cs" />
     <Compile Include="DAO\VagasDao.cs" />
     <Compile Include="Entity\Bd_Sge_Fluent.cs" />
     <Compile Include="Entity\ClienteMap.cs" />
@@ -72,6 +73,11 @@
     <Compile Include="Interfaces\IUsuarioDAO.cs" />
     <Compile Include="Interfaces\IVagasDAO.cs" />
     <Compile Include="Interfaces\IVeiculoDAO.cs" />
+    <Compile Include="Migrations\201809171855097_primeiraCarga.cs" />
+    <Compile Include="Migrations\201809171855097_primeiraCarga.Designer.cs">
+      <DependentUpon>201809171855097_primeiraCarga.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -86,7 +92,11 @@
       <Name>SGEDOMINIO</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201809171855097_primeiraCarga.resx">
+      <DependentUpon>201809171855097_primeiraCarga.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

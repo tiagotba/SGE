@@ -12,11 +12,11 @@ namespace SGEDOMINIO
 
         public DateTime Data_Hora_Saida { get; set; }
 
-        public int Id_Vaga { get; set; }
+     //   public int Id_Vaga { get; set; }
 
         public virtual Vagas Vaga { get; set; }
 
-        public int Id_Veiculo { get; set; }
+    //    public int Id_Veiculo { get; set; }
 
         public virtual Veiculo Veiculo { get; set; }
 

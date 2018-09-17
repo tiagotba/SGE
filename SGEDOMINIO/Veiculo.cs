@@ -17,10 +17,10 @@ namespace SGEDOMINIO
 
         public string Placa_Veic { get; set; }
 
-        public IList<Ocupacao> Ocupacoes { get; set; }
+        public virtual IList<Ocupacao> Ocupacoes { get; set; }
 
-        public IList<Desocupacao> Desocupacoes { get; set; }
+        public virtual IList<Desocupacao> Desocupacoes { get; set; }
 
-        public IList<Ocorrencia> Ocorrencias { get; set; }
+        public virtual IList<Ocorrencia> Ocorrencias { get; set; }
     }
 }

@@ -18,13 +18,13 @@ namespace SGEDAO.Entity
             this.Property(o => o.Data_Hora_Ocorrencia).HasColumnType("datetime").HasColumnName("DATA_OCORRENCIA");
             this.HasRequired(o => o.TipoOcorrencia)
                 .WithMany(x => x.Ocorrencias)
-                .HasForeignKey(o => o.Id_Tipo_Ocorrencia);
+                .Map(m => m.MapKey("Id_Tipo_Ocorrencia"));
             this.HasRequired(o => o.Veiculo)
                 .WithMany(x => x.Ocorrencias)
-                .HasForeignKey(o => o.Id_Veiculo);
+                .Map(m => m.MapKey("Id_Veiculo"));
             this.HasRequired(o => o.Cliente)
                .WithMany(x => x.Ocorrencias)
-               .HasForeignKey(o => o.Id_Cliente);
+               .Map(m => m.MapKey("Id_Cliente"));
 
             this.ToTable("OCO_OCORRENCIA", "bd_sge_sql");
         }

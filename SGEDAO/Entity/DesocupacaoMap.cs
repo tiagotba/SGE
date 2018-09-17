@@ -16,11 +16,11 @@ namespace SGEDAO.Entity
             this.HasKey(d => d.Id_Desocupacao);
             this.Property(d => d.Data_Hora_Saida).HasColumnName("DATA_SAIDA");
             this.HasRequired(o => o.Vaga)
-               .WithMany(x => x.Desocupacoes)
-               .HasForeignKey(o => o.Id_Vaga);
+               .WithMany(x => x.Desocupacoes).Map(m => m.MapKey("Id_Vaga"));
+
             this.HasRequired(o => o.Veiculo)
                .WithMany(x => x.Desocupacoes)
-               .HasForeignKey(o => o.Id_Veiculo);
+              .Map(m => m.MapKey("Id_Veiculo"));
         }
     }
 }

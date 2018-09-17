@@ -15,7 +15,7 @@ namespace SGEDOMINIO
         }
         public int Id_Setor{ get; set; }
         public string Nome_Setor { get; set; }
-        public IList<Vagas> Vagas { get; set; }
-        public IList<Ocupacao> Ocupacoes { get; set; }
+        public virtual IList<Vagas> Vagas { get; set; }
+       public virtual IList<Ocupacao> Ocupacoes { get; set; }
     }
 }

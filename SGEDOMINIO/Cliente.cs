@@ -22,7 +22,7 @@ namespace SGEDOMINIO
 
         public bool E_Func_Cliente { get; set; }
 
-        public IList<Ocorrencia> Ocorrencias { get; set; }
+        public virtual IList<Ocorrencia> Ocorrencias { get; set; }
 
         public virtual Usuario Usuario { get; set; }
 

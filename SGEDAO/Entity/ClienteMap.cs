@@ -22,10 +22,6 @@ namespace SGEDAO.Entity
 
             this.Property(c => c.E_Func_Cliente);
 
-            this.HasMany(c => c.Ocorrencias)
-                .WithRequired(c => c.Cliente)
-                .HasForeignKey(x => x.Id_Cliente);
-
             this.ToTable("CLI_CLIENTE", "bd_sge_sql");
         }
     }
