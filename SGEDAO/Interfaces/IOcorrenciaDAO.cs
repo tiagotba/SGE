@@ -9,7 +9,7 @@ namespace SGEDAO.Interfaces
 {
   public  interface IOcorrenciaDAO
     {
-        bool Salvar(Ocorrencia oco);
+        int Salvar(Ocorrencia oco);
         IEnumerable<Ocorrencia> ListarTodas();
         void Editar(Ocorrencia oco);
         Ocorrencia Pesquisar(int idOco);

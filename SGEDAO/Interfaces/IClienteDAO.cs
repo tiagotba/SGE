@@ -9,7 +9,7 @@ namespace SGEDAO.Interfaces
 {
    public interface IClienteDAO
     {
-        bool Salvar(Cliente cli);
+        int Salvar(Cliente cli);
         IEnumerable<Cliente> ListarTodos();
         void Editar(Cliente cli);
         Cliente Pesquisar(int idCli);

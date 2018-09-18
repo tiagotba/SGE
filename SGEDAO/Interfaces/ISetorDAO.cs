@@ -9,7 +9,7 @@ namespace SGEDAO.Interfaces
 {
   public  interface ISetorDAO
     {
-        bool Salvar(Setor set);
+        int Salvar(Setor set);
         IEnumerable<Setor> ListarTodos();
         Setor Pesquisar(int idSet);
     }

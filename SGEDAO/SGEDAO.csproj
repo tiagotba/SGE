@@ -50,6 +50,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DaoFactory.cs" />
+    <Compile Include="DAO\ClienteDao.cs" />
+    <Compile Include="DAO\OcorrenciaDao.cs" />
+    <Compile Include="DAO\SetorDao.cs" />
+    <Compile Include="DAO\TipoOcorrenciaDao.cs" />
     <Compile Include="DAO\UsuarioDao.cs" />
     <Compile Include="DAO\VagasDao.cs" />
     <Compile Include="Entity\Bd_Sge_Fluent.cs" />
@@ -69,7 +73,7 @@
     <Compile Include="Interfaces\IOcorrenciaDAO.cs" />
     <Compile Include="Interfaces\IOcupacaoDAO.cs" />
     <Compile Include="Interfaces\ISetorDAO.cs" />
-    <Compile Include="Interfaces\ITipoDAO.cs" />
+    <Compile Include="Interfaces\ITipoOcorrenciaDAO.cs" />
     <Compile Include="Interfaces\IUsuarioDAO.cs" />
     <Compile Include="Interfaces\IVagasDAO.cs" />
     <Compile Include="Interfaces\IVeiculoDAO.cs" />
