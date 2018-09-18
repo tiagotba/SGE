@@ -14,15 +14,12 @@ namespace SGEDAO.Entity
         {
             this.HasKey(v => v.Id_Vaga);
             this.Property(v => v.Numero_Vaga).HasMaxLength(3);
-            ////   this.HasRequired(i => i.setor).WithMany(i => i.Vagas)
-            //       .HasForeignKey(i => i.setor);
+        
             this.HasRequired(v => v.setor)
                    .WithMany(x => x.Vagas)
                    .Map(m => m.MapKey("Id_Setor"));
-            //this.HasMany(v => v.Desocupacoes)
-            //    .WithRequired(v => v.Vaga)
-            //    .HasForeignKey(x => x.Id_Vaga);
-            this.ToTable("VAG_VAGA", "bd_sge_sql");
+         
+            this.ToTable("VAG_VAGA");
         }
     }
 }

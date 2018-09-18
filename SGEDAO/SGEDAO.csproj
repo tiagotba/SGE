@@ -77,6 +77,14 @@
     <Compile Include="Migrations\201809171855097_primeiraCarga.Designer.cs">
       <DependentUpon>201809171855097_primeiraCarga.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201809181717214_segundaCarga.cs" />
+    <Compile Include="Migrations\201809181717214_segundaCarga.Designer.cs">
+      <DependentUpon>201809181717214_segundaCarga.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201809181719299_secondCarga.cs" />
+    <Compile Include="Migrations\201809181719299_secondCarga.Designer.cs">
+      <DependentUpon>201809181719299_secondCarga.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -95,6 +103,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201809171855097_primeiraCarga.resx">
       <DependentUpon>201809171855097_primeiraCarga.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809181717214_segundaCarga.resx">
+      <DependentUpon>201809181717214_segundaCarga.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809181719299_secondCarga.resx">
+      <DependentUpon>201809181719299_secondCarga.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

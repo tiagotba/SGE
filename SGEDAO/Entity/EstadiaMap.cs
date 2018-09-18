@@ -15,10 +15,8 @@ namespace SGEDAO.Entity
             this.HasKey(e => e.Id_Estadia);
             this.Property(e => e.Qtd_Ocorrencia).HasColumnName("QTD_OCORRENCIA");
             this.Property(e=>e.Valor_Estadia).HasColumnName("VLR_ESTADIA").HasColumnType("decimal");
-           this. HasOptional(e => e.Ocupacao)
-                .WithRequired(x => x.Estadia);
-            this.HasOptional(e => e.Desocupacao)
-               .WithRequired(x => x.Estadia);
+
+            this.ToTable("EST_ESTADIA");
         }
     }
 }

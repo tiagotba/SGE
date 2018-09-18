@@ -19,7 +19,7 @@ namespace SGEDOMINIO
 
         public string Senha_Func { get; set; }
 
-        public virtual Cliente Cliente { get; set; }
+     //   public virtual Cliente Cliente { get; set; }
 
         
     }

@@ -15,13 +15,9 @@ namespace SGEDAO.Entity
         {
             this.HasKey(v => v.Id_Veiculo);
             this.Property(v => v.Placa_Veic).IsRequired().HasColumnName("PLC_VEICULO").HasMaxLength(8);
-
-            //this.HasMany(v => v.Ocupacoes)
-            //   .WithRequired(d => d.veiculo)
-            //   .HasForeignKey(x => x.Id_Veiculo);
            
 
-            this.ToTable("VEIC_VEICULO", "bd_sge_sql");
+            this.ToTable("VEIC_VEICULO");
 
         }
     }

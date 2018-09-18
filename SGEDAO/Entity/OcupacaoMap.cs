@@ -25,7 +25,10 @@ namespace SGEDAO.Entity
 
             this.HasRequired(o => o.veiculo).WithMany(o => o.Ocupacoes).Map(m => m.MapKey("Id_Veiculo"));
 
-            this.ToTable("OCU_OCUPACAO", "bd_sge_sql");
+            this.HasRequired(x => x.Estadia)
+           .WithRequiredPrincipal();
+
+            this.ToTable("OCU_OCUPACAO");
         }
     }
 }

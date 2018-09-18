@@ -16,7 +16,7 @@ namespace SGEDAO.Entity
             this.Property(to => to.Desc_Tipo_Ocorrencia).IsRequired().HasColumnName("DSC_TIPO_OCORRENCIA");
             this.Property(to => to.Tipo_Status).IsRequired().HasColumnName("FL_STATUS").HasColumnType("bit");
 
-            this.ToTable("TIPO_OCORRENCIA", "bd_sge_sql");
+            this.ToTable("TIPO_OCORRENCIA");
         }
     }
 }

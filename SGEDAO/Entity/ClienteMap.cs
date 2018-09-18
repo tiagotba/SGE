@@ -22,7 +22,10 @@ namespace SGEDAO.Entity
 
             this.Property(c => c.E_Func_Cliente);
 
-            this.ToTable("CLI_CLIENTE", "bd_sge_sql");
+            this.HasOptional(x => x.Usuario)
+           .WithOptionalPrincipal();
+
+            this.ToTable("CLI_CLIENTE");
         }
     }
 }

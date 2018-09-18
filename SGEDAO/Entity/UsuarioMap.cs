@@ -17,10 +17,8 @@ namespace SGEDAO.Entity
             this.Property(u => u.Matr_Func).IsRequired().HasColumnName("MATR_USU");
             this.Property(u => u.Tel_Func).IsRequired().HasColumnName("TEL_USU");
             this.Property(u => u.Senha_Func).IsRequired().HasColumnName("SENHA_USU");
-            HasOptional(u => u.Cliente)
-               .WithRequired(x => x.Usuario);
-
-            this.ToTable("USU_USUARIO", "bd_sge_sql");
+           
+            this.ToTable("USU_USUARIO");
         }
     }
 }

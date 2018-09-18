@@ -26,7 +26,7 @@ namespace SGEDAO.Entity
                .WithMany(x => x.Ocorrencias)
                .Map(m => m.MapKey("Id_Cliente"));
 
-            this.ToTable("OCO_OCORRENCIA", "bd_sge_sql");
+            this.ToTable("OCO_OCORRENCIA");
         }
     }
 }

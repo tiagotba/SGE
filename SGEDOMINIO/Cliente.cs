@@ -11,6 +11,7 @@ namespace SGEDOMINIO
         public Cliente()
         {
             Ocorrencias = new List<Ocorrencia>();
+            Usuario = new Usuario();
         }
         public int Id_Cliente { get; set; }
 

@@ -17,23 +17,7 @@ namespace SGEDAO.Entity
 
             this.Property(s => s.Nome_Setor).HasMaxLength(100);
 
-            //this.HasMany(s=>s.Ocupacoes)
-            //    .WithOptional(o=>o.setor)
-            //    .HasForeignKey(x=>x.Id_Setor);
-
-
-            //this.HasRequired(s => s.Ocupacoes)
-            //    .WithMany()
-            //   // .Map(m => m.MapKey("Id_Setor"))
-            //    .HasForeignKey(x => x.Id_Setor);
-                
-
-            //this.HasRequired(s => s.Vagas)
-            //   .WithMany()
-            //   .Map(m => m.MapKey("Id_Setor"));
-
-
-            this.ToTable("SET_SETOR", "bd_sge_sql");
+            this.ToTable("SET_SETOR");
 
         }
     }

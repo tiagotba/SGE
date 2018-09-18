@@ -10,9 +10,9 @@ namespace SGEDOMINIO
     {
         public int Id_Estadia { get; set; }
 
-        public virtual Ocupacao Ocupacao { get; set; }
+        //public virtual Ocupacao Ocupacao { get; set; }
 
-        public virtual Desocupacao Desocupacao { get; set; }
+        //public virtual Desocupacao Desocupacao { get; set; }
 
         public decimal Valor_Estadia { get; set; }
 
