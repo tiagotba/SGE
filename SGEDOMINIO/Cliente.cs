@@ -11,6 +11,7 @@ namespace SGEDOMINIO
         public Cliente()
         {
             Ocorrencias = new List<Ocorrencia>();
+            Veiculos = new List<Veiculo>();
             Usuario = new Usuario();
         }
         public int Id_Cliente { get; set; }
@@ -24,6 +25,8 @@ namespace SGEDOMINIO
         public bool E_Func_Cliente { get; set; }
 
         public virtual IList<Ocorrencia> Ocorrencias { get; set; }
+
+        public virtual IList<Veiculo> Veiculos { get; set; }
 
         public virtual Usuario Usuario { get; set; }
 

@@ -30,12 +30,25 @@ namespace SGEDAO.DAO
 
         public bool Excluir(int idUsu)
         {
-            throw new NotImplementedException();
+            bool result = false;
+            var entity = Pesquisar(idUsu);
+
+            if (entity != null)
+            {
+                _sgeContext.usuario.Remove(entity);
+                result = true;
+            }
+            else
+            {
+                result = false;
+            }
+
+            return result;
         }
 
         public IEnumerable<Usuario> ListarTodos()
         {
-            throw new NotImplementedException();
+            return _sgeContext.usuario.Select(v => v);
         }
 
         public Usuario Pesquisar(int idUsu)
@@ -43,9 +56,10 @@ namespace SGEDAO.DAO
             return _sgeContext.usuario.FirstOrDefault(u => u.Id_Usuario == idUsu);
         }
 
-        public bool Salvar(Usuario usu)
+        public int Salvar(Usuario usu)
         {
-            throw new NotImplementedException();
+            _sgeContext.Entry(usu).State = System.Data.Entity.EntityState.Added;
+            return _sgeContext.SaveChanges();
         }
     }
 }

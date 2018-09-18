@@ -15,7 +15,9 @@ namespace SGEDAO.Entity
         {
             this.HasKey(v => v.Id_Veiculo);
             this.Property(v => v.Placa_Veic).IsRequired().HasColumnName("PLC_VEICULO").HasMaxLength(8);
-           
+            this.HasRequired(o => o.Cliente)
+                .WithMany(x => x.Veiculos)
+                .Map(m => m.MapKey("Id_Cliente"));
 
             this.ToTable("VEIC_VEICULO");
 

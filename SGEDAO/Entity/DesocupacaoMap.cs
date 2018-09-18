@@ -17,6 +17,9 @@ namespace SGEDAO.Entity
             this.Property(d => d.Data_Hora_Saida).HasColumnName("DATA_SAIDA");
             this.HasRequired(o => o.Vaga)
                .WithMany(x => x.Desocupacoes).Map(m => m.MapKey("Id_Vaga"));
+            this.HasRequired(v => v.setor)
+                    .WithMany(x => x.Desocupacoes)
+                    .Map(m => m.MapKey("Id_Setor"));
 
             this.HasRequired(o => o.Veiculo)
                .WithMany(x => x.Desocupacoes)

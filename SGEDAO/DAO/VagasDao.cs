@@ -55,10 +55,10 @@ namespace SGEDAO.DAO
             return _sgeContext.vagas.FirstOrDefault(v => v.Id_Vaga == idVag);
         }
 
-        public void Salvar(Vagas vag)
+        public int Salvar(Vagas vag)
         {
             _sgeContext.Entry(vag).State = System.Data.Entity.EntityState.Added;
-            _sgeContext.SaveChanges();
+            return  _sgeContext.SaveChanges();
 
         }
     }

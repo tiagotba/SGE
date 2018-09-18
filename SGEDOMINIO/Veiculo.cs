@@ -17,6 +17,8 @@ namespace SGEDOMINIO
 
         public string Placa_Veic { get; set; }
 
+        public virtual Cliente Cliente { get; set; }
+
         public virtual IList<Ocupacao> Ocupacoes { get; set; }
 
         public virtual IList<Desocupacao> Desocupacoes { get; set; }

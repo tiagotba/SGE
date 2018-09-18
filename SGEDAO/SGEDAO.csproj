@@ -85,6 +85,10 @@
     <Compile Include="Migrations\201809181719299_secondCarga.Designer.cs">
       <DependentUpon>201809181719299_secondCarga.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201809181934112_terceiraCarga18092018.cs" />
+    <Compile Include="Migrations\201809181934112_terceiraCarga18092018.Designer.cs">
+      <DependentUpon>201809181934112_terceiraCarga18092018.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -109,6 +113,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201809181719299_secondCarga.resx">
       <DependentUpon>201809181719299_secondCarga.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809181934112_terceiraCarga18092018.resx">
+      <DependentUpon>201809181934112_terceiraCarga18092018.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -9,7 +9,7 @@ namespace SGEDAO.Interfaces
 {
   public  interface IUsuarioDAO
     {
-        bool Salvar(Usuario usu);
+        int Salvar(Usuario usu);
         IEnumerable<Usuario> ListarTodos();
         void Editar(Usuario usu);
         bool Excluir(int idUsu);

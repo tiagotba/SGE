@@ -9,7 +9,7 @@ namespace SGEDAO.Interfaces
 {
    public interface IVagasDAO
     {
-        void Salvar(Vagas vag);
+        int Salvar(Vagas vag);
         IEnumerable<Vagas> ListarTodos();
         void Editar(Vagas vag);
         bool Excluir(int idVag);

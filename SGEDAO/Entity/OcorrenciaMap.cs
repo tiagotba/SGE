@@ -25,6 +25,7 @@ namespace SGEDAO.Entity
             this.HasRequired(o => o.Cliente)
                .WithMany(x => x.Ocorrencias)
                .Map(m => m.MapKey("Id_Cliente"));
+            this.Property(o => o.Tipo_Status).IsRequired().HasColumnName("FL_STATUS_OCORRENCIA").HasColumnType("bit");
 
             this.ToTable("OCO_OCORRENCIA");
         }
