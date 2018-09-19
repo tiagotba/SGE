@@ -9,8 +9,9 @@ namespace SGEDAO.Interfaces
 {
   public  interface IVeiculoDAO
     {
-        bool Salvar(Veiculo veic);
+        int Salvar(Veiculo veic);
         IEnumerable<Veiculo> ListarTodos();
+        void Editar(Veiculo veic);
         Veiculo Pesquisar(int idVeic);
     }
 }

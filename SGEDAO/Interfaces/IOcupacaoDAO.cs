@@ -9,7 +9,8 @@ namespace SGEDAO.Interfaces
 {
    public interface IOcupacaoDAO
     {
-        bool Salvar(Ocupacao ocu);
-        bool Excluir(int idOcu);
+        int Salvar(Ocupacao ocu);
+        IEnumerable<Ocupacao> ListarTodos();
+        Ocupacao Pesquisar(int idOcu);
     }
 }
