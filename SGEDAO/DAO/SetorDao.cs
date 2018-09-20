@@ -13,6 +13,11 @@ namespace SGEDAO.DAO
     {
         private readonly Bd_Sge_Fluent _sgeContext;
 
+        public SetorDao(Bd_Sge_Fluent sgeContext)
+        {
+            _sgeContext = sgeContext;
+        }
+
         public IEnumerable<Setor> ListarTodos()
         {
             return _sgeContext.setor.Select(s => s);
